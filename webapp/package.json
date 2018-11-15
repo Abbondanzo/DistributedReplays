@@ -2,6 +2,14 @@
     "name": "webapp",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+        "analyze": "source-map-explorer build/static/js/main.*",
+        "start": "react-scripts-ts start",
+        "build": "react-scripts-ts build",
+        "test": "react-scripts-ts test --env=jsdom",
+        "eject": "react-scripts-ts eject",
+        "tslint-prettier-check": "tslint-config-prettier-check ./tslint.json"
+    },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.4",
         "@fortawesome/free-brands-svg-icons": "^5.3.1",
@@ -24,14 +32,6 @@
         "redux": "^4.0.0",
         "redux-devtools-extension": "^2.13.5",
         "three": "^0.96.0"
-    },
-    "scripts": {
-        "analyze": "source-map-explorer build/static/js/main.*",
-        "start": "react-scripts-ts start",
-        "build": "react-scripts-ts build",
-        "test": "react-scripts-ts test --env=jsdom",
-        "eject": "react-scripts-ts eject",
-        "tslint-prettier-check": "tslint-config-prettier-check ./tslint.json"
     },
     "devDependencies": {
         "@types/chart.js": "^2.7.33",
